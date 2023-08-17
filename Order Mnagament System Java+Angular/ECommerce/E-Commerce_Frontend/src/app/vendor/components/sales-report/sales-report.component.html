@@ -1,0 +1,69 @@
+<div>
+        <div class="parent">
+            <div class="child">
+                <div nz-row class="imgDiv">
+                    <h2 style="margin-left: 230px;">Sales Report</h2>
+                </div>
+
+                <form nz-form [formGroup]="validateForm" (ngSubmit)="getMyOrders()">
+                    <div nz-row>
+                        <div nz-col [nzMd]="24" [nzSm]="24" [nzXs]="24">
+                        </div>
+                        
+                        <div nz-col nzSpan="24">
+                            <nz-form-item>
+                                <nz-form-label [nzSpan]="8" nzFor="startDate">Start Date</nz-form-label>
+                                <nz-form-control [nzSpan]="18">
+                                    <nz-date-picker formControlName="startDate" style="width: 100%;"
+                                        nzPlaceHolder="Start Date Date" name="startDate" [nzFormat]="dateFormat"
+                                        id="startDate">
+                                    </nz-date-picker>
+                                </nz-form-control>
+                            </nz-form-item>
+                        </div>
+
+                        <div nz-col nzSpan="24">
+                            <nz-form-item>
+                                <nz-form-label [nzSpan]="8" nzFor="endDate">End Date</nz-form-label>
+                                <nz-form-control [nzSpan]="18">
+                                    <nz-date-picker formControlName="endDate" style="width: 100%;"
+                                        nzPlaceHolder="End Date" name="endDate" [nzFormat]="dateFormat" id="endDate">
+                                    </nz-date-picker>
+                                </nz-form-control>
+                            </nz-form-item>
+                        </div>
+
+                        <div nz-col nzSpan="24">
+                            <nz-form-item>
+                                <nz-form-label [nzSpan]="8" nzFor="endDate">Category</nz-form-label>
+                                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a Category"
+                                        formControlName="categoryId">
+                                        <nz-option *ngFor="let category of listOfCategories" nzLabel={{category.name}}
+                                            nzValue={{category.id}}></nz-option>
+                                    </nz-select>
+                                </nz-form-control>
+                            </nz-form-item>
+                        </div>
+
+                        <div nz-col nzSpan="24">
+                            <nz-form-item>
+                                <nz-form-label [nzSpan]="8" nzFor="endDate">Product</nz-form-label>
+                                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a Product"
+                                        formControlName="productId">
+                                        <nz-option *ngFor="let product of listOfProducts" nzLabel={{product.name}}
+                                            nzValue={{product.id}}></nz-option>
+                                    </nz-select>
+                                </nz-form-control>
+                            </nz-form-item>
+                        </div>
+
+
+                    </div>
+
+                    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" style="margin-left: 120px;">Generate Report</button>
+                </form>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,8 @@
+
+  \{^_^}/ hi!
+
+  Loading db.json
+SyntaxError: Malformed JSON in file: db.json
+Unexpected string in JSON at position 151
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\praffulrastogi\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35

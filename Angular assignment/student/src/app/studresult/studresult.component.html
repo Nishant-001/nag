@@ -1,0 +1,32 @@
+<!-- &nbsp; <a href="studview">Back</a> -->
+<!-- <button (click)="getData">hehe</button> -->
+&nbsp; <a routerLink="/studview"><button  class="Button">Logout</button></a>&nbsp;
+<div class="result-display" *ngFor="let student of studentdata">
+    <p class="result-heading">Result</p>
+    <br />
+    <div class="inside-div">
+        <div class="label">
+            <p style="float:right">Roll No:</p>
+        </div>
+        <div class="display-field">{{student.rollno}}</div>
+    </div>
+    <div class="inside-div">
+        <div class="label">
+            <p style="float:right">Name:</p>
+        </div>
+        <div class="display-field">{{student.name}}</div>
+    </div>
+    <div class="inside-div">
+        <div class="label">
+            <p style="float:right">Date of Birth:</p>
+        </div>
+        <div class="display-field">{{student.dateofbirth}}</div>
+    </div>
+    <div class="inside-div">
+        <div class="label">
+            <p style="float:right">Score:</p>
+        </div>
+        <div class="display-field">{{student.score}}</div>
+    </div>
+</div>
+

@@ -1,0 +1,60 @@
+.container {
+	margin-top: 10px; text-align: center;border: 1px solid black;
+}
+#cont_header {
+	margin-bottom:30px;border:1px solid #cceded;background-image:  linear-gradient(#cceded, white);
+}
+#headerdiv {
+	margin-left:200px;padding-top:20px;padding-bottom:20px;
+}
+.container .row h6{
+	float: rigth; margin-top: 23px;margin-right:23px;
+}
+#btn_logout{
+	border: 1px solid #81a1db; margin-top: 20px; margin-bottom: 20px; margin-left: 15px;margin-right:18px; border-radius: 8%; padding-right: 20px; padding-left: 20px;"
+}
+#formrow{
+	margin-left:10px;
+}
+#bookmargin {
+	margin-top: 20px;
+}
+#bookmargin h5{
+	color:#d43b4b;
+}
+#div_h2 {
+	margin-bottom: 50px;
+}
+#code {
+	margin-left: 35px;border-radius:5px;border:1px solid black;
+}
+#name {
+	margin-left: 30px;border-radius:5px;border:1px solid black;
+}
+#labelauth {
+	margin-right:55px;
+}
+#bookAuthor {
+	margin-left:10px;padding-right:36px;padding-left:36px;border-radius:5px;border:1px solid black;
+}
+#date {
+	margin-left: 44px;border-radius:5px;border:hidden;
+}
+#submitcancel{
+	padding-bottom:20px;margin-right:100px;
+}
+#submitid {
+	padding-right:20px;padding-left:20px;
+}
+#cancelid {
+	margin-left:20px;padding-right:20px;padding-left:20px;
+}
+#footid {
+	border:1px solid #cceded;background-image:  linear-gradient(#cceded, white);margin-top:40px;
+}
+#footdiv {
+	padding-top:20px;padding-bottom:20px;
+}
+#footdiv h3 {
+	text-align: center;
+}

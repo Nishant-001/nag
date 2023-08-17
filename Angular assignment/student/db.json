@@ -1,0 +1,42 @@
+{
+  "studData": [
+    {
+      "id": 11,
+      "rollno": "2",
+      "name": "Nikhil",
+      "dateofbirth": "2022-11-01",
+      "score": "12"
+    },
+    {
+      "id": 12,
+      "rollno": "1",
+      "name": "Aditya",
+      "dateofbirth": "2021-11-01",
+      "score": "13"
+    },
+    {
+      "id": 13,
+      "rollno": "3",
+      "name": "Nishant",
+      "dateofbirth": "2022-12-12",
+      "score": "500"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

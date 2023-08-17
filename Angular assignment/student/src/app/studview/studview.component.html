@@ -1,0 +1,19 @@
+&nbsp; <a href="primarylogin">Back</a>
+<div class="col-md-4 col-md-offset-6 container center_div mt-2">
+    <h2 class="pt-5">Find Result</h2>
+    <form [formGroup]="formValue" class="sm-3">
+        <div class="mb-3">
+            <label for="inputRollNo" class="form-label">RollNo</label>
+            <input type="text" #rollNo required formControlName="rollNo" class="form-control" id="rollNo"
+                aria-describedby="rollNoHelp">
+            <small *ngIf="formValue.get('rollNo')?.invalid && formValue.get('rollNo')?.touched " class="text-danger">Rollno is Required</small>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="name">
+            <small *ngIf="formValue.get('name')?.invalid && formValue.get('name')?.touched " class="text-danger">Name is Required</small>
+        </div>
+    </form>
+    <button (click)="search()" type="button" class="btn-btn-primary">Search</button>&nbsp;
+    <button (click)="clear()" type="button" class="btn-btn-secondary" id="cancel">Clear</button>
+</div>

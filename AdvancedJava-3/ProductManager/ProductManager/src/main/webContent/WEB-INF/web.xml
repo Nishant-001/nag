@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>WebUtility</display-name>
+	<welcome-file-list>
+
+		<welcome-file>index.jsp</welcome-file>
+
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.nagarro.loginlogout.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>pqr</servlet-name>
+		<servlet-class>com.nagarro.loginlogout.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>pqr</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>mno</servlet-name>
+		<servlet-class>com.nagarro.service.AddProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mno</servlet-name>
+		<url-pattern>/AddProduct</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>xyz</servlet-name>
+		<servlet-class>com.nagarro.service.EditProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/EditProduct</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>def</servlet-name>
+		<servlet-class>com.nagarro.service.DeleteProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>def</servlet-name>
+		<url-pattern>/DeleteProduct</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "tittle": "mypost",
+      "category": "News",
+      "content": "Govt extends deadline to link PAN with Aadhaar till June 30\nThe government has extended the deadline to link Permanent Account Number (PAN) with Aadhaar to June 30, 2023, the Ministry of Finance informed in a release on Tuesday.",
+      "id": 1
+    },
+    {
+      "tittle": "aaa",
+      "category": "aa",
+      "content": "ssssssssssssssssssssssss",
+      "id": 2
+    }
+  ]
+}

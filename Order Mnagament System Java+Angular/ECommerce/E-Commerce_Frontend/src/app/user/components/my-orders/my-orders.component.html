@@ -1,0 +1,16 @@
+    <nz-table #basicTable [nzData]="myOrders" [nzPageSize]="20" [nzShowPagination]="'true'">
+        <thead>
+            <tr>
+                <th style="font-weight: bolder; color: #003973;">ID</th>
+                <th style="font-weight: bolder; color: #003973;">Name</th>
+                <th style="font-weight: bolder; color: #003973;">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of basicTable.data">
+                <td>{{order.id}}</td>
+                <td>{{order.productName}}</td>
+                <td>{{order.date | date: 'dd/MM/yyyy'}}</td>
+            </tr>
+        </tbody>
+    </nz-table>

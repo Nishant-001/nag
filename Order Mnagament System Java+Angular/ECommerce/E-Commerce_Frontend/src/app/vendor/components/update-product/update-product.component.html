@@ -1,0 +1,96 @@
+<div class="inner-content" style="margin-left: 450px;">
+        <div class="dashboard-filter">
+            <h1 style="margin-left: 100px;">Update Product</h1>
+            <div class="filter-grid" [formGroup]="validateForm">
+                <div class="filter-select-dropdown filter-fields-width">
+                    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                        <div nz-row>
+                            <div nz-col [nzMd]="24" [nzSm]="24" [nzXs]="24">
+                                <div class="profile-badge">
+                                    <img class="profile" [src]="avatarUrl" alt="profile" />
+
+                                    <input type="file" nz-button nzType="primary" id="upload_profile_image"
+                                        accept="image/x-png,image/gif,image/jpeg" (change)="uploadFile($event)">
+                                    <label for="upload_profile_image">
+                                        <img id="add_img_icon" class="upload-icon"
+                                            src="../../../../assets/add_icon.png" />
+                                    </label>
+                                    <button nz-button nzShape="circle">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div nz-col nzSpan="13" style="margin-top: 20px;">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Category</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a Category"
+                                            formControlName="categoryId">
+                                            <nz-option *ngFor="let category of listOfCategories" nzLabel={{category.name}}
+                                                nzValue={{category.id}}></nz-option>
+                                        </nz-select>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+
+                            <div nz-col nzSpan="13" style="margin-top: 20px;">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Code</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <input nz-input placeholder="Code" formControlName="code" />
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+
+                            <div nz-col nzSpan="13" style="margin-top: 20px;">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Discount</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <input nz-input placeholder="Discount" formControlName="discount" />
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+
+                            <div nz-col nzSpan="13" style="margin-top: 20px;">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Name</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <input nz-input placeholder="Name" formControlName="name" />
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+
+
+                            <div nz-col nzSpan="13" style="margin-top: 20px;">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Price</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <input nz-input type="number" placeholder="Price" formControlName="price" />
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+
+                            <div nz-col nzSpan="13">
+                                <nz-form-item>
+                                    <nz-form-label [nzSpan]="5">Description</nz-form-label>
+                                    <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                        <textarea rows="1" nz-input placeholder="Description"
+                                            formControlName="description"></textarea>
+                                    </nz-form-control>
+                                </nz-form-item>
+                            </div>
+                        </div>
+                        <div nz-col nzSpan="13">
+                            <nz-form-item>
+                                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="This Input Is Required!">
+                                    <button nz-button class="login-form-button login-form-margin"
+                                        [nzType]="'primary'">Update</button>
+                                </nz-form-control>
+                            </nz-form-item>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>

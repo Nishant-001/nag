@@ -1,0 +1,65 @@
+.header{
+    padding-top:5px;
+    font-size: medium;
+    height: 35px;
+    background-color: #04AA6D;
+    text-align: center;
+    color: white;
+  }
+  .footer {
+    padding-top:5px;
+    font-size: medium;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #04AA6D;
+    text-align: center;
+    color: white;
+  }
+  .tablehead{
+    text-align: center;
+  }
+  #StudentInfo{
+    border: 2px solid #04AA6D;
+  }
+  tr:nth-child(odd) {background-color: #8be6c5;}
+
+  #name{
+    font-weight: bold;
+  }
+  #tablescroll{
+    height:400px;
+    overflow-y: auto;
+  }
+  #desc{
+    background-color: #04AA6D !important;
+  }
+  #verticalBreak{
+    padding-right:20px; border-right: 1px solid #04AA6D;
+  }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      position:relative;
+    }
+    #verticalBreak{
+        padding-right:0px; border-right: none;
+      }
+  }
+
+  .fadeIn {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  

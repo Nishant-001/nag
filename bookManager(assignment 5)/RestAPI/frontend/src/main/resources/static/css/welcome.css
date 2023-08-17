@@ -1,0 +1,45 @@
+.container {
+	text-align: center; border: 1px solid black;
+}
+#header_id {
+	margin-bottom: 60px; border:1px solid #cceded;background-image:  linear-gradient(#cceded, white);
+}
+#heading_id{
+	padding-top: 20px; padding-bottom: 20px;margin-left:50px;
+}
+#userheading {
+	float: rigth; margin-top: 10px; padding-top: 20px; paddding-bottom: 20px;
+}
+#userheadingform {
+	float: right; padding-top: 20px; padding-bottom: 20px;margin-right:20px;
+}
+#userheadingform button {
+	border: 1px solid black; margin-top: 4px; margin-bottom: 6px; margin-left: 18px;; border-radius: 8%; padding-right: 20px; padding-left: 20px;
+}
+#tableheading {
+	margin-bottom: 30px; text-align: center;
+}
+#tableheading a{
+	float:right;margin-right:50px;
+}
+.scrollit {
+	overflow-y:scroll;height:300px;
+}
+.scrollit table{
+	margin-top: 30px;width:100%;
+}
+#editbtn button{
+	padding-left:25px;padding-right:25px;margin-right:10px;
+}
+#deletebtn button {
+	padding-left:20px;padding-right:20px;
+}
+#footerid {
+	border:1px solid #cceded;background-image:  linear-gradient(#cceded, white); margin-top: 40px;
+}
+#footerid div{
+	margin-right:140px;
+}
+#footerid h3 {
+	text-align: center; padding-top: 20px; padding-bottom: 20px;
+}

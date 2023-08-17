@@ -1,0 +1,47 @@
+.container{
+	padding-top: 30px;align-items: center;
+}
+
+#cont_header {
+	margin-bottom:80px;border:1px solid #cceded;background-image:  linear-gradient(#6380b0, white);
+}
+#headerdiv {
+	padding-top:20px;padding-bottom:20px;
+}
+#form_id{
+	border: 1px solid black; border-radius: 10px;
+}
+#username_id {
+	padding-top: 20px;
+}
+#username_id mark {
+	margin-left: 40px; background-color: #c3c7c4; margin-right: 160px;
+}
+h5{
+	text-align:center;
+	color:red;
+}
+#username_id input {
+	margin-right: 80px;
+}
+#password_id{
+	padding-top: 20px;
+}
+#password_id mark {
+	margin-left: 40px; background-color: #c3c7c4; margin-right: 140px;
+}
+#login {
+	text-align: center;
+}
+#login button {
+	border: 1px solid black; border-radius: 8px; margin-top: 4px; margin-bottom: 4px; padding-right: 15px; padding-left: 15px;
+}
+#footid {
+	border:1px solid #cceded;background-image:  linear-gradient(#6380b0, white);margin-top:100px;
+}
+#footdiv {
+	padding-top:20px;padding-bottom:20px;
+}
+#footdiv h3 {
+	text-align: center;
+}
